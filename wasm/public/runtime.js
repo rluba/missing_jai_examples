@@ -1,7 +1,7 @@
 
 let allocated; // A global reference of the WASM’s memory area so that we can look up pointers
 
-// These are all the functions that we declared as "#foreign WASM" in our Jai code.
+// These are all the functions that we declared as "#foreign" in our Jai code.
 // They let you interact with the JS and DOM world from within Jai.
 // If you forget to implement one, the Proxy below will log a nice error.
 const exported_js_functions = {
